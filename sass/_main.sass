@@ -202,23 +202,50 @@ header
     margin: 80px 20px 0
 
 .about
-  padding: 70px 0
-  font-family: 'pf_din_text_cond_prolight'
+  padding: 70px 0 60px
+  font-family: 'roboto_condensedlight'
   font-size: 18px
   color: #3c3c3c
-  h2
-    color: #ffaa00
-    font-size: 60px
+  background: url(../img/about_bg.png)
+  +cover
+  position: relative
   &__img
     margin-left: 0
-    margin-top: 40px
+    margin-top: 30px
     text-align: center
   p
     margin-top: 30px
     line-height: 1.6em
     &:first-of-type
-      margin-top: 110px
+      margin-top: 70px
+  &__about
+  .button--about
+    +border-radius(8px)
+    +background-clip(padding-box)
+    background-color: #777
+    +box-shadow(inset 0 -6px 0 rgba(150,40,130,.4))
+    +background-image(linear-gradient(tp bottom, #952781 0%, #c74fa9 60.01%, #ffd1f5 100%))
+    +background-image(linear-gradient(tp bottom, #ffd1f5 0%, #c74fa9 40%, #952781 100%))
+    height: 80px
+    width: 240px
+    padding-top: 17px
+    &:hover, &:focus
+      background: #c74fa9
+    &:active
+      +box-shadow(0 0 0 0)
+  &__pencil
+    margin-left: 40px
+    margin-top: -10px
 
+  &__shadow
+    position: absolute
+    bottom: -50px
+    background: url(../img/about-shadow.png) no-repeat
+    height: 50px
+    width: 100%
+    max-width: 1000px
+    left: 50%
+    +transform(translateX(-50%))
 .how
   padding: 30px 0
   background: url(../img/how_bg.jpg)
