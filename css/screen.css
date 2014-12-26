@@ -1835,11 +1835,11 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .other__form form .button--other:hover, .other__form form .button--other:focus { background: #c74fa9; color: #ffffff; }
 .other__form form .button--other:active { -webkit-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; }
 
-footer { background: url(../img/footer_bg.png) repeat; padding: 12px; font-family: "pf_din_text_cond_prolight"; text-align: center; }
-footer p { font-size: 16px; margin-bottom: 5px; color: #ffffff; }
-footer p:last-child { margin-bottom: 0; }
-footer a { color: #fadc96; text-decoration: underline; }
-footer a:hover, footer a:active, footer a:focus { color: #fadc96; text-decoration: none; }
+footer { background: url(../img/footer_bg.png) repeat; padding: 16px; font-family: "roboto_condensedlight"; text-align: center; }
+footer p { font-size: 16px; margin-bottom: 5px; color: #787878; }
+footer p:last-child { margin-bottom: 0; letter-spacing: -0.5px; }
+footer a { color: #28a0d2; text-decoration: underline; }
+footer a:hover, footer a:active, footer a:focus { color: #28a0d2; text-decoration: none; }
 
 @media (max-width: 992px) { .recipes__item { margin: 40px auto 0; } }
 @media (max-width: 768px) { h1, h2 { font-size: 32px !important; }
