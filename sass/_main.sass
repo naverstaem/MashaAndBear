@@ -246,23 +246,6 @@ header
     max-width: 1000px
     left: 50%
     +transform(translateX(-50%))
-.how
-  padding: 30px 0
-  background: url(../img/how_bg.jpg)
-  +cover
-  font-family: 'pf_din_text_cond_prolight'
-  font-size: 18px
-  color: #3c3c3c
-  h2
-    font-size: 60px
-    color: #ffaa00
-    margin-bottom: 40px
-  p
-    margin-top: 25px
-  button
-    margin-top: 40px
-    margin-bottom: 500px
-    padding: 19px 71px
 
 
 
@@ -350,47 +333,75 @@ header
 
 
 
-
-
-
-
-
-
-
-
-
-
 .advantages
-  padding: 40px 0 150px
   overflow: hidden
-  .container
-    position: relative
-  div[class*="col-md-2"]
-    padding: 0 5px
-    margin-right: 60px
-    &:last-child
-      margin-right: 0
-  h2
-    margin-bottom: 20px
-  &__block
-    background: url(../img/advantages_bg.jpg) no-repeat 48% 100%
-  &__item
-    position: relative
+  background: url(../img/advantages_bg.jpg)
+  +cover
+  padding: 150px 0 90px
+  &__title
     text-align: center
-    margin-top: 25px
-    p
-      font-family: 'pf_din_text_cond_prolight'
-      font-size: 24px
-    &.i1,&.i3
-      margin-top: 65px
-  &__item-img
-    width: 160px
-    height: 160px
-    line-height: 160px
-    +border-radius(24px)
-    border: solid 2px #efefef
-    margin-bottom: 10px
+    h3
+      font-size: 36px
+      color: #ffffff
+      font-family: 'firasans-regular'
+  &__logo
     display: inline-block
+  &__item
+    background: url(../img/advantages-item_bg.png) repeat
+    +border-radius(4px)
+    position: relative
+    padding: 28px
+    font-family: 'roboto_condensedlight'
+    margin-top: 40px
+    &.i1, &.i3
+      margin: 40px 34px 0
+    &.i3, &.i4
+      text-align: right
+      h3
+        i
+          margin-right: 0
+          margin-left: 18px
+      p
+        padding-left: 0
+        padding-right: 48px
+
+
+    h3
+      color: #28a0d2
+      font-size: 30px
+      margin-top: 0
+      i
+        position: relative
+        background: url(../img/advantages-icon.png) no-repeat
+        width: 30px
+        height: 30px
+        display: inline-block
+        vertical-align: top
+        margin-right: 18px
+
+    p
+      font-size: 18px
+      color: #3c3c3c
+      padding-left: 48px
+  &__shadow
+    position: absolute
+    bottom: -20px
+    background: url(../img/advantages-item-shadow.png)
+    height: 20px
+    max-width: 280px
+    width: 100%
+    left: 50%
+    +transform(translate(-50%))
+    content: ''
+  &__img
+    text-align: center
+    margin-top: -335px
+    margin-bottom: -90px
+    img
+      position: relative
+
+
+
 
 
 

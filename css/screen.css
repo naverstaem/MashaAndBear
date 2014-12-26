@@ -1754,11 +1754,6 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .about__pencil { margin-left: 40px; margin-top: -10px; }
 .about__shadow { position: absolute; bottom: -50px; background: url(../img/about-shadow.png) no-repeat; height: 50px; width: 100%; max-width: 1000px; left: 50%; -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -webkit-transform: translateX(-50%); transform: translateX(-50%); }
 
-.how { padding: 30px 0; background: url(../img/how_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; font-family: "pf_din_text_cond_prolight"; font-size: 18px; color: #3c3c3c; }
-.how h2 { font-size: 60px; color: #ffaa00; margin-bottom: 40px; }
-.how p { margin-top: 25px; }
-.how button { margin-top: 40px; margin-bottom: 500px; padding: 19px 71px; }
-
 .functions { padding-top: 100px; overflow: hidden; }
 .functions h2 { text-align: left; }
 .functions__list { counter-reset: myCounter; list-style: none; font-family: "roboto_condensedlight"; font-size: 18px; color: #3c3c3c; padding-left: 75px; }
@@ -1778,16 +1773,21 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .specs__list li { margin-top: 25px; }
 .specs__list li:first-child { margin-top: 0; }
 
-.advantages { padding: 40px 0 150px; overflow: hidden; }
-.advantages .container { position: relative; }
-.advantages div[class*="col-md-2"] { padding: 0 5px; margin-right: 60px; }
-.advantages div[class*="col-md-2"]:last-child { margin-right: 0; }
-.advantages h2 { margin-bottom: 20px; }
-.advantages__block { background: url(../img/advantages_bg.jpg) no-repeat 48% 100%; }
-.advantages__item { position: relative; text-align: center; margin-top: 25px; }
-.advantages__item p { font-family: "pf_din_text_cond_prolight"; font-size: 24px; }
-.advantages__item.i1, .advantages__item.i3 { margin-top: 65px; }
-.advantages__item-img { width: 160px; height: 160px; line-height: 160px; -moz-border-radius: 24px; -webkit-border-radius: 24px; border-radius: 24px; border: solid 2px #efefef; margin-bottom: 10px; display: inline-block; }
+.advantages { overflow: hidden; background: url(../img/advantages_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding: 150px 0 90px; }
+.advantages__title { text-align: center; }
+.advantages__title h3 { font-size: 36px; color: #ffffff; font-family: "firasans-regular"; }
+.advantages__logo { display: inline-block; }
+.advantages__item { background: url(../img/advantages-item_bg.png) repeat; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; position: relative; padding: 28px; font-family: "roboto_condensedlight"; margin-top: 40px; }
+.advantages__item.i1, .advantages__item.i3 { margin: 40px 34px 0; }
+.advantages__item.i3, .advantages__item.i4 { text-align: right; }
+.advantages__item.i3 h3 i, .advantages__item.i4 h3 i { margin-right: 0; margin-left: 18px; }
+.advantages__item.i3 p, .advantages__item.i4 p { padding-left: 0; padding-right: 48px; }
+.advantages__item h3 { color: #28a0d2; font-size: 30px; margin-top: 0; }
+.advantages__item h3 i { position: relative; background: url(../img/advantages-icon.png) no-repeat; width: 30px; height: 30px; display: inline-block; vertical-align: top; margin-right: 18px; }
+.advantages__item p { font-size: 18px; color: #3c3c3c; padding-left: 48px; }
+.advantages__shadow { position: absolute; bottom: -20px; background: url(../img/advantages-item-shadow.png); height: 20px; max-width: 280px; width: 100%; left: 50%; -moz-transform: translate(-50%); -ms-transform: translate(-50%); -webkit-transform: translate(-50%); transform: translate(-50%); content: ""; }
+.advantages__img { text-align: center; margin-top: -335px; margin-bottom: -90px; }
+.advantages__img img { position: relative; }
 
 .characteristics { font-family: "pf_din_text_cond_prolight"; padding: 55px 0 45px; background: url(../img/characteristics_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .characteristics__img { margin-top: 55px; position: relative; text-align: center; }
