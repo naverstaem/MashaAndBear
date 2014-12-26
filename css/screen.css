@@ -1769,6 +1769,15 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .functions__list li:nth-of-type(6):before { top: 10px; }
 .functions__img { margin-top: 235px; margin-left: -75px; }
 
+.specs { background: url(../img/specs_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; margin-top: 20px; }
+.specs h2 { margin-top: 80px; margin-left: -80px; line-height: 1em; }
+.specs h2 span { letter-spacing: -2px; }
+.specs__img { position: relative; top: -20px; margin-bottom: -120px; }
+.specs__list { list-style: none; font-size: 18px; color: #3c3c3c; font-family: "roboto_condensedlight"; padding: 20px; background: #ffffff; -moz-border-radius: 12px; -webkit-border-radius: 12px; border-radius: 12px; margin: 40px 15px 0 100px; position: relative; }
+.specs__list:after { position: absolute; background: url(../img/specs-candy.png) no-repeat; width: 160px; height: 165px; bottom: -65px; right: 0; content: ""; }
+.specs__list li { margin-top: 25px; }
+.specs__list li:first-child { margin-top: 0; }
+
 .advantages { padding: 40px 0 150px; overflow: hidden; }
 .advantages .container { position: relative; }
 .advantages div[class*="col-md-2"] { padding: 0 5px; margin-right: 60px; }
