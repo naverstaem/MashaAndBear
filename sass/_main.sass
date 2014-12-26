@@ -266,6 +266,47 @@ header
 
 
 
+.functions
+  padding-top: 100px
+  overflow: hidden
+  h2
+    text-align: left
+  &__list
+    counter-reset: myCounter
+    list-style: none
+    font-family: 'roboto_condensedlight'
+    font-size: 18px
+    color: #3c3c3c
+    padding-left: 75px
+    li
+      position: relative
+      margin-top: 40px
+      &:before
+        position: absolute
+        content: counter(myCounter)
+        counter-increment: myCounter
+        top: -10px
+        left: -70px
+        width: 50px
+        height: 50px
+        line-height: 50px
+        +border-radius(50%)
+        border: solid 1px #e5e5e5
+        font-family: 'firasans-regular'
+        font-size: 30px
+        color: #c850aa
+        text-align: center
+      &:first-of-type
+        margin-top: 50px
+        &:before
+          top: 0
+      &:nth-of-type(6)
+        &:before
+          top: 10px
+  &__img
+    margin-top: 235px
+    margin-left: -75px
+
 
 
 .advantages
