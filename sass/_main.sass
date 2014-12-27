@@ -190,6 +190,16 @@ header
   background: url(../img/about_bg.png)
   +cover
   position: relative
+  &:after
+    position: absolute
+    bottom: 0
+    top: 50%
+    content: ''
+    width: 80%
+    left: 10%
+    +border-radius(40%)
+    +box-shadow(0 0 48px 15px rgba(#787882,.8))
+    z-index: -1
   &__img
     margin-left: 0
     margin-top: 30px
@@ -485,15 +495,61 @@ header
       position: absolute
       content: ''
       background: url(../img/header--bottom-shadow.png) no-repeat
-      width: 100%
-      max-width: 1000px
+      +cover
       height: 30px
       top: 0
-      left: 50%
-      +transform(translateX(-50%))
+      left: 0
+      right: 0
+.present
+  color: #ffffff
+
+  &-b
+    background: url(../img/header-present_bg.png)
+    +cover
+    margin: 0 -18px
+    +border-radius(12px)
+    padding: 25px 45px 45px
+    position: relative
+    top: -70px
+    z-index: 1
+  h3
+    font-family: 'firasans-bold'
+    font-size: 36px
+    color: #962882
+    text-align: center
+  &__item
+    text-align: left
+    margin-top: 25px
+    font-family: 'roboto_condensedlight'
+    background: #ffffff
+    +border-radius(12px)
+  &__text
+    h4
+      font-size: 30px
+      overflow: hidden
+      padding-top: 20px
+      color: #aa826e
+    p
+      font-size: 18px
+      overflow: hidden
+      color: #5a5a5a
+      line-height: 1.7em
+  &__img
+    float: left
+    margin-left: -60px
+    margin-right: 10px
+  &__ribbon
+    position: absolute
+    bottom: -95px
+    left: -65px
+    background: url(../img/present-ribbon.png) no-repeat
+    content: ''
+    width: 240px
+    height: 225px
+    z-index: 1
 .other
   margin-top: 0
-  padding: 70px 0 60px
+  padding: 40px 0 60px
   h2
     margin-bottom: 30px
   &__item
