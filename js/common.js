@@ -60,9 +60,7 @@ head.ready(function() {
 		$(window).on('load', function(){
 			$('#carousel-review .item').carouselHeights();
 		});
-		$(window).on('load', function(){
-			$('#carousel-recipes .item').carouselHeights();
-		});
+
 
 	});
     //stellar parallax effect=================================

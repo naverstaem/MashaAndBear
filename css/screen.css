@@ -1863,5 +1863,4 @@ footer a:hover, footer a:active, footer a:focus { color: #28a0d2; text-decoratio
   .header__img img, .about__img img, .functions__img img, .specs__img img, .advantages__logo img { max-width: 100%; }
   .header__logo img { max-width: 100% !important; }
   .present-b { margin: 0; } }
-@media (max-width: 480px) { .characteristics__bottom .button--characteristics { margin-left: 0; }
-  header .header__price, .header--bottom .header__price { right: 0; z-index: 1; } }
+@media (max-width: 480px) { .specs__list:after { background: none; } }
