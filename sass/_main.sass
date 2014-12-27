@@ -10,9 +10,9 @@
 /////////////////////
 .navbar-brand
   text-transform: uppercase
-  color: #ffffff !important
+  color: rgb(205,152,121) !important
   font-family: 'firasans-light'
-  font-size: 42px
+  font-size: 36px
   margin-top: 10px
   span
     color: #282828
@@ -56,6 +56,7 @@
   .navbar-right
     margin-top: -10px
     font-family: 'firasans-light'
+    padding: 2px 0
     .phone-b
       position: relative
       display: inline-block
@@ -181,6 +182,15 @@ header
       right: -18px
       top: -18px
       z-index: 1
+    &:after
+      position: absolute
+      content: ''
+      background: url(../img/form-shadow.png)
+      +cover
+      height: 80px
+      bottom: -65px
+      left: 0
+      right: 0
 
 .about
   padding: 70px 0 60px
@@ -434,10 +444,11 @@ header
   &__item
     margin-top: 40px
   &__img
-    +box-shadow(0 1px 4px rgba(0,0,0,.25))
     +border-radius(50%)
+    text-align: center
     img
       width: 100%
+      +box-shadow(0 1px 4px rgba(0,0,0,.25))
       max-width: 140px
       +border-radius(50%)
   &__text
@@ -510,7 +521,7 @@ header
     +border-radius(12px)
     padding: 25px 45px 45px
     position: relative
-    top: -70px
+    top: -55px
     z-index: 1
   h3
     font-family: 'firasans-bold'
@@ -692,25 +703,34 @@ footer
 @media (max-width: $screen-md-min)
   .recipes__item
     margin: 40px auto 0
-
+  .functions__img, .specs__img
+    margin: 0
+  .advantages__img
+    margin-top: 0
+  header
+    .header__price
+      margin-top: 80px
+      margin-left: 0
+    .header__img
+      margin: 0
+    .header__form
+      &:after
+        background: none
 @media (max-width: $screen-sm-min)
   h1, h2
     font-size: 32px !important
     span
       font-size: 32px !important
-  .header__img, .cook__img, .about__img, .characteristics__img
+  .header__img, .about__img, .functions__img, .specs__img, .advantages__logo
     img
       max-width: 100%
-  .about__img
-    margin-left: 0
+  .header__logo
+    img
+      max-width: 100% !important
+  .present-b
+    margin: 0
 
 
 @media (max-width: $screen-xs-min)
-  .characteristics__bottom
-    .button--characteristics
-      margin-left: 0
-  header
-    .header__price
-      right: 0
-      z-index: 1
+
 
