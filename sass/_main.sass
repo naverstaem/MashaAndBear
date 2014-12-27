@@ -479,7 +479,18 @@ header
   background: url(../img/header--bottom_bg.jpg)
   +cover
   .main--bottom
+    position: relative
     padding-top: 50px
+    &:before
+      position: absolute
+      content: ''
+      background: url(../img/header--bottom-shadow.png) no-repeat
+      width: 100%
+      max-width: 1000px
+      height: 30px
+      top: 0
+      left: 50%
+      +transform(translateX(-50%))
 .other
   margin-top: 0
   padding: 70px 0 60px
